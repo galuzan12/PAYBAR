@@ -1,0 +1,64 @@
+.itemcard_row{
+    background-color: white;
+    border: 2px solid rgba(255, 171, 230, 0.61);
+    margin-top: 5px !important;
+    width: 100%;
+}
+.itemcard_row_img{
+    background-color: black;
+
+}
+.itemcard_text_row{
+    padding:0 !important
+    }
+
+/* אפשר לעשות שבמסך גדול הגובה גדול יותר */
+.itemcard_img_col{ 
+    height: 100px;
+    padding:0 !important;
+    text-align: right;
+}
+.itemcard_img{
+    height: 100%;
+    background-color: black;
+
+}
+
+
+.itemcard_text_col {
+    padding:0 !important;
+    margin:0px !important;
+    
+}
+
+.productPrice , .productName{
+    font-size: 75% !important;
+}
+
+.productName{
+    padding: 3px 0 !important;
+    font-weight: 700;
+    text-align: right;
+}
+.productPrice{
+    padding: 3px 3px !important;
+    text-align: left !important;
+    font-weight: 700;
+    color: rgb(219, 29, 92);
+}
+.productDescription{
+    font-size: 70% !important;
+    text-align: right;
+    padding: 0 !important;
+}
+.importantNotes{
+    font-size: 70% !important;
+    text-align: right;
+    padding: 0 !important;
+    font-weight: 600;
+}
+.POPULAR{
+    text-align: left !important;
+    font-size: 60% !important;
+    padding: 0 !important;
+}
