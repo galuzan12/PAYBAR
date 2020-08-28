@@ -1,0 +1,70 @@
+.float_cart{
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(56, 42, 20, 0.678);
+    transition: top 1s linear;
+
+}
+.float_cart_productsshow {
+    overflow: scroll;
+    height: 100vh;
+    animation: slideRight 0.5s ease-in;
+    position: absolute;
+    background-color: white;
+    -webkit-animation: slideRight 0.5s forwards;
+    padding: 0% !important;    
+    /* -webkit-animation-delay: 2s; */
+    /* animation: slide 1s forwards; */
+    /* animation-delay: 2s; */
+}
+
+@-webkit-keyframes slideRight {
+    from { right: -200px }
+    to { right: 0; }
+}
+
+@keyframes slideRight {
+    from { right: -200px }
+    to { right: 0; }
+}
+
+.col_cart_icon{
+    animation: slideRightCart 0.5s ease-in;
+    -webkit-animation: slideRightCart 0.5s forwards;
+}
+.float_cart_header{
+    text-align: center;
+    padding: 0% !important; 
+    /* לעשות שהכותרת תידבק */
+}
+.products_float_cart{
+    margin-bottom: 2px !important;
+    border: 1px solid rgb(196, 228, 188);
+    background-color: rgb(204, 218, 203);
+    text-align: right;
+    padding: 0% !important;    
+}
+.products_float_cart *{
+    padding: 0% !important;
+    margin-bottom: 0 !important;
+}
+
+.float_cart_header_row{
+    background-color: rgb(75, 128, 78);
+    z-index: 100;
+    position: -webkit-sticky;
+    position: sticky;
+    margin-top: 5px !important;
+    top: 0;
+}
+.products_row_float_cart{
+    margin-bottom: 20% !important;
+}
+.products_float_cart_order_btn_col{
+    margin-top: 5% !important;
+}
+.btn_order{
+    height: 150% !important;
+}
