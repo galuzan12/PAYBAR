@@ -3,37 +3,41 @@ import './ItemCard.css';
 import { Row, Col } from 'react-bootstrap';
 import { AiFillStar } from 'react-icons/ai'
 function ItemCard(props) {
-    const { productName, productPrice, productDescription,importantNotes, isPopular } = props.item;
+    const { productName, productPrice, productDescription, importantNotes, isPopular } = props.item;
+
+    const addProductToCart = () => {
+        alert("bbb")
+    }
     return (
-        <Row className="itemcard_row">
+        <Row onClick={addProductToCart} className="itemcard_row">
             <Col xs={4} className="itemcard_img_col">
-                    <img className="itemcard_img" src={process.env.PUBLIC_URL + '/logo192.png'} alt="" />
+                <img className="itemcard_img" src={process.env.PUBLIC_URL + '/logo192.png'} alt="" />
             </Col>
             <Col xs={8} className="itemcard_text_col">
                 <Row className="itemcard_text_row">
                     <Col xs={8} className="productName"> {productName} </Col>
                     <Col xs={4} className="productPrice"> {productPrice} ₪</Col>
                 </Row>
-                
-                <Row  className="itemcard_text_row">
+
+                <Row className="itemcard_text_row">
                     <Col xs={12} className="productDescription"> {productDescription} </Col>
                 </Row>
-                
-                <Row>
-                <Col xs={7} className="itemcard_text_row">
-                        <Col className="importantNotes"> 
-                        {
-                        importantNotes.map((item,key)=>
-                        key +1 != importantNotes.length ? item + "," : item
-                        )}
-                        </Col>
-                    
-                </Col>
-                
-                {isPopular && <Col xs={5}  className="itemcard_text_row">
-                    <Col className="POPULAR"> POPULAR <AiFillStar color="#FFD700" />  </Col>
 
-                </Col>}
+                <Row>
+                    <Col xs={7} className="itemcard_text_row">
+                        <Col className="importantNotes">
+                            {
+                                importantNotes.map((item, key) =>
+                                    key + 1 != importantNotes.length ? item + "," : item
+                                )}
+                        </Col>
+
+                    </Col>
+
+                    {isPopular && <Col xs={5} className="itemcard_text_row">
+                        <Col className="POPULAR"> POPULAR <AiFillStar color="#FFD700" />  </Col>
+
+                    </Col>}
                 </Row>
             </Col>
         </Row>

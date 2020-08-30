@@ -53,55 +53,7 @@ const TMP_PRODUCTS_FOR_FLOAT_CART = [
         importantNotes: ['ללא גלוטן', 'פיקנטי'],
         isPopular: true,
     },
-    {
-        productName: 'שדגשדג',
-        productPrice: '123',
-        productDescription: 'שדגדשגד גדש דשג שדג שד ',
-        importantNotes: ['ללא גלוטן', 'פיקנטי'],
-        isPopular: true,
-    },
-    {
-        productName: 'שם המנה',
-        productPrice: '123',
-        productDescription: ' תיאור המנה - תיאור ארוך בלה בלה בלה',
-        importantNotes: ['ללא גלוטן', 'פיקנטי'],
-        isPopular: true,
-    },
-    {
-        productName: 'שדגשדג',
-        productPrice: '123',
-        productDescription: 'שדגדשגד גדש דשג שדג שד ',
-        importantNotes: ['ללא גלוטן', 'פיקנטי'],
-        isPopular: true,
-    },
-    {
-        productName: 'שם המנה',
-        productPrice: '123',
-        productDescription: ' תיאור המנה - תיאור ארוך בלה בלה בלה',
-        importantNotes: ['ללא גלוטן', 'פיקנטי'],
-        isPopular: true,
-    },
-    {
-        productName: 'שדגשדג',
-        productPrice: '123',
-        productDescription: 'שדגדשגד גדש דשג שדג שד ',
-        importantNotes: ['ללא גלוטן', 'פיקנטי'],
-        isPopular: true,
-    },
-    {
-        productName: 'שם המנה',
-        productPrice: '123',
-        productDescription: ' תיאור המנה - תיאור ארוך בלה בלה בלה',
-        importantNotes: ['ללא גלוטן', 'פיקנטי'],
-        isPopular: true,
-    },
-    {
-        productName: 'שדגשדג',
-        productPrice: '123',
-        productDescription: 'שדגדשגד גדש דשג שדג שד ',
-        importantNotes: ['ללא גלוטן', 'פיקנטי'],
-        isPopular: true,
-    }
+
 ]
 
 const FloatCart = (props) => {

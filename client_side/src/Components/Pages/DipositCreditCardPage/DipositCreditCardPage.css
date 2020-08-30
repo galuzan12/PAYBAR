@@ -1,0 +1,15 @@
+.dipositCreditCardPage_row{
+  height: 100vh;
+}
+.dipositCreditCardPage_col_header_explaination{
+  width: 100vw !important;
+
+}
+.dipositCreditCardPage_col{
+  background-color: coral;
+  /* height: 40vh !important; */
+  width: 100vw !important;
+}
+.dipositCreditCardPage_text{
+  padding: 0 !important;
+}

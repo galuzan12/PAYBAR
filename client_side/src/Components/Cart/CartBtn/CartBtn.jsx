@@ -5,7 +5,7 @@ import { AiOutlineShoppingCart } from 'react-icons/ai';
 import FloatCart from '../FloatCart/FloatCart';
 const CartBtn = () => {
 
-    const [showFloatCart, setShowFloatCart] = useState(true);
+    const [showFloatCart, setShowFloatCart] = useState(false);
 
     return (
         <React.Fragment>
