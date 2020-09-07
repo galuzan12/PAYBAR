@@ -1,15 +1,25 @@
+.logoImg_row{
+  background-color: rgb(59, 59, 59);
+  
+}
+.logo_img{
+  height: 50px;
+  opacity: 0.5;
+}
 .dipositCreditCardPage_row{
-  height: 100vh;
+  display: flex;
+  justify-items: center !important;
+  align-items: center;
 }
-.dipositCreditCardPage_col_header_explaination{
-  width: 100vw !important;
 
+.dipositCreditCardPage_col_header_explaination{
+  font-size: 25px;
+  margin: 2% 0 1% 0;
+  padding-right: 45px !important;
+  color: rgb(90, 127, 158);
 }
-.dipositCreditCardPage_col{
-  background-color: coral;
-  /* height: 40vh !important; */
-  width: 100vw !important;
-}
-.dipositCreditCardPage_text{
-  padding: 0 !important;
+
+.btnCardDeposit{
+background-color:rgb(90, 127, 158) !important;
+border: none !important;
 }

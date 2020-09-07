@@ -1,21 +1,19 @@
 .col_cart_icon{
   margin-right: 10px !important;
-  border: 1px solid white;
+  border: 1px solid rgb(238, 238, 238);
   border-radius: 10px;
   position: fixed !important;
   background-color: black;
-  width:60px;
-  height:60px;
-  top: 75vh;
+  
+  bottom: 10vh;
 }
 
 .cart_icon{
-  margin-top: 10px;
+  margin: 10px;
   font-size: 40px;
   color: white;
 }
-.cart_icon:hover{
-  padding: 1px;
-  font-size: 40px;
-  color: rgb(175, 164, 164);
+.col_cart_icon:hover{
+  
+  background-color: rgb(175, 164, 164);
 }

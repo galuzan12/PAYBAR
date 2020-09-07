@@ -10,9 +10,9 @@ const CartBtn = () => {
     return (
         <React.Fragment>
             {!showFloatCart ?
-                <Col xs={2} onClick={() => setShowFloatCart(true)} className="col_cart_icon" >
+                <div onClick={() => setShowFloatCart(true)} className="col_cart_icon" >
                     <AiOutlineShoppingCart className="cart_icon" />
-                </Col> :
+                </div> :
                 <FloatCart showFloatCart={showFloatCart} setShowFloatCart={setShowFloatCart} />
             }
         </React.Fragment>

@@ -73,11 +73,11 @@ function HomePage() {
 
     return (
         <React.Fragment>
-            <Row className="d-flex justify-content-center">
-                <img className="image_header" src={process.env.PUBLIC_URL + '/Healthy-Food-Plate.jpg'} alt="" />
+            <Row className="nav">
+                <div><h2> תפריט </h2></div>
+                <div><img className="logo_img" src={require('../../../img/logo.png')} /></div>
             </Row>
-            <h2> תפריט </h2>
-            <Row className="menu_row d-flex justify-content-center">
+            <Row className="menu_row">
                 <NavBar TMP_CATAGOIRES={TMP_CATAGOIRES} />
             </Row>
             <Row className="d-flex justify-content-center">

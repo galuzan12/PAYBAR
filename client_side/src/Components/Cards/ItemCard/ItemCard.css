@@ -1,6 +1,6 @@
 .itemcard_row{
     background-color: white;
-    border: 2px solid rgba(255, 171, 230, 0.61);
+    border: 2px solid rgba(171, 184, 255, 0.61);
     margin-top: 5px !important;
     width: 100%;
 }
@@ -8,13 +8,12 @@
     background-color: black;
 
 }
-.itemcard_text_row{
-    padding:0 !important
-    }
+
 
 /* אפשר לעשות שבמסך גדול הגובה גדול יותר */
 .itemcard_img_col{ 
     height: 100px;
+    width: 100px !important;
     padding:0 !important;
     text-align: right;
 }
@@ -22,13 +21,6 @@
     height: 100%;
     background-color: black;
 
-}
-
-
-.itemcard_text_col {
-    padding:0 !important;
-    margin:0px !important;
-    
 }
 
 .productPrice , .productName{
@@ -39,26 +31,37 @@
     padding: 3px 0 !important;
     font-weight: 700;
     text-align: right;
+    color:rgb(23, 81, 148);
+}
+.importantNotes , .productName , .productDescription{
+    padding-right: 5px !important;
+}
+
+.itemcard_row {
+    position: relative;
 }
 .productPrice{
-    padding: 3px 3px !important;
-    text-align: left !important;
+    position: absolute;
+    left:2px;
+    bottom: 2px;
     font-weight: 700;
     color: rgb(219, 29, 92);
 }
+.POPULAR{
+    position: absolute;
+    left:2px;
+    top: 2px;
+    font-size: 60% !important;
+}
 .productDescription{
     font-size: 70% !important;
-    text-align: right;
-    padding: 0 !important;
 }
 .importantNotes{
     font-size: 70% !important;
-    text-align: right;
-    padding: 0 !important;
     font-weight: 600;
 }
-.POPULAR{
-    text-align: left !important;
-    font-size: 60% !important;
-    padding: 0 !important;
+@media only screen and (min-width: 600px) {
+.itemcard_row{
+    width: 90%;
+}
 }

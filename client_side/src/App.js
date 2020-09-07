@@ -20,7 +20,8 @@ function App() {
     <Container dir="rtl" fluid className="App">
       <Router>
         <Switch>
-          {creditCardDiposit ?
+        <Route exact path="/"><HomePage /></Route>
+          {/* {creditCardDiposit ?
             <React.Fragment>
               <Route exact path="/"><HomePage /></Route>
               <Route path="/"><CheckoutPage /></Route>
@@ -28,7 +29,7 @@ function App() {
             <React.Fragment>
               <Route exact path="/"><DipositCreditCardPage setCreditCardDeposit={setCreditCardDeposit} /></Route>
             </React.Fragment>
-          }
+          } */}
         </Switch>
       </Router>
     </Container>

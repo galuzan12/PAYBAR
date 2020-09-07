@@ -10,36 +10,29 @@ function ItemCard(props) {
     }
     return (
         <Row onClick={addProductToCart} className="itemcard_row">
-            <Col xs={4} className="itemcard_img_col">
+            <div className="itemcard_img_col">
                 <img className="itemcard_img" src={process.env.PUBLIC_URL + '/logo192.png'} alt="" />
-            </Col>
-            <Col xs={8} className="itemcard_text_col">
-                <Row className="itemcard_text_row">
-                    <Col xs={8} className="productName"> {productName} </Col>
-                    <Col xs={4} className="productPrice"> {productPrice} ₪</Col>
-                </Row>
-
-                <Row className="itemcard_text_row">
-                    <Col xs={12} className="productDescription"> {productDescription} </Col>
-                </Row>
-
-                <Row>
-                    <Col xs={7} className="itemcard_text_row">
-                        <Col className="importantNotes">
+            </div>
+            <div className="itemcard_text">
+                <div className="productName"> {productName} </div>
+                <div  className="productPrice"> {productPrice} ₪</div>
+                <div  className="productDescription"> {productDescription} </div>
+                    <div className="itemcard_text_row">
+                        <div className="importantNotes">
                             {
                                 importantNotes.map((item, key) =>
                                     key + 1 != importantNotes.length ? item + "," : item
                                 )}
-                        </Col>
+                        </div>
 
-                    </Col>
+                    </div>
 
-                    {isPopular && <Col xs={5} className="itemcard_text_row">
-                        <Col className="POPULAR"> POPULAR <AiFillStar color="#FFD700" />  </Col>
+                    {isPopular && <Row  className="itemcard_text_row">
+                        <div className="POPULAR"> POPULAR <AiFillStar color="#FFD700" />  </div>
 
-                    </Col>}
-                </Row>
-            </Col>
+                    </Row>}
+                
+            </div>
         </Row>
     );
 }
