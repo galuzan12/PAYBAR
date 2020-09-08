@@ -1,6 +1,6 @@
 .itemcard_row{
     background-color: white;
-    border: 2px solid rgba(171, 184, 255, 0.61);
+    border: 3px solid rgba(171, 184, 255, 0.61);
     margin-top: 5px !important;
     width: 100%;
 }
@@ -40,18 +40,17 @@
 .itemcard_row {
     position: relative;
 }
+.POPULAR{
+    
+    padding-top: 3px;
+    font-size: 60% !important; 
+}
 .productPrice{
     position: absolute;
     left:2px;
-    bottom: 2px;
+    top: 2px;
     font-weight: 700;
     color: rgb(219, 29, 92);
-}
-.POPULAR{
-    position: absolute;
-    left:2px;
-    top: 2px;
-    font-size: 60% !important;
 }
 .productDescription{
     font-size: 70% !important;
@@ -64,4 +63,73 @@
 .itemcard_row{
     width: 90%;
 }
+}
+
+
+.addToCart{
+    position: absolute;
+    left:2px;
+    bottom: 2px;
+    border-radius: 6px;
+    padding: 0 3px;
+    background-color: rgba(173, 206, 233, 0.473);
+}
+.CountItem{
+    padding: 0 3px;
+    font-weight: 600;
+}
+.plus , .minus{
+    border:none !important;
+    background-color: transparent !important;
+    padding: 0 7px;
+}
+.plus{
+    color: teal;
+    font-weight: 700;
+}
+.addToCart_text{
+    margin-left: 5px;
+}
+
+
+
+@media only screen and (max-width: 767px) {
+    .itemcard_img_col{
+        width: 100% !important;
+        background-color: black;
+        border-radius: 8px 8px 0 0;
+        
+    }
+    .itemcard_row {
+        padding-bottom: 32px;
+        display: flex;
+        justify-content: center;
+        
+    }
+    .itemcard_row * {
+        text-align: center !important;
+    }
+    .itemcard_text_row {
+        display: flex;
+        justify-content: center;
+    }
+    .addToCart{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding: 0 10px !important;
+        left:0;
+        bottom: 0;
+        border-radius: 0px;
+    }
+    .productPrice{
+        font-size:20px !important;
+        top:10px;
+        left:10px;
+        color: rgb(221, 143, 169);
+    }
+    .itemcard_row {
+        margin:10px !important;
+        border-radius: 8px;
+    }
 }
